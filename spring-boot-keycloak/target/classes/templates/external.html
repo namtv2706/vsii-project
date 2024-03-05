@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:include="layout :: headerFragment">
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron text-center">
+			<h1>VSI - Keycloak</h1>
+		</div>
+		<a href="/logout">Logout</a>
+		<div>
+			<div class="well">
+				<b>Danh sách dự án: </b><a th:href="@{/v3/editor/project}">Project</a>
+				<b>Xem chi tiết: </b><a th:href="@{/v3/editor/project/1}">Project ID</a>
+			</div>
+		</div>
+	</div>
+	<!-- container -->
+
+</body>
+</html>
